@@ -1,7 +1,7 @@
 
 INSERT INTO credentials(username,password,role) VALUES ('admin','admin', 'ROLE_ADMIN');
 INSERT INTO credentials(username,password,role) VALUES ('guest','guest', 'ROLE_USER');
-INSERT INTO address (street, city, state, zipcode) VALUES ('admin', 'admin', 'admin', 'admin');
+INSERT INTO address (street, city, state, zipcode) VALUES ('1000 N 4TH Street', 'Fairfield', 'IA', '52557');
 INSERT INTO user (firstName, lastName, email, userNumber, addressid, credentialsid) VALUES ('admin', 'admin', 'admin@admin.com',1,1,1);
 
 INSERT INTO categories(id, name, description) VALUES (null, 'Electrnoics', 'electronic goods');
