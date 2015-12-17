@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="baseLayout" template="/WEB-INF/tiles/template/baseLayout.jsp">
+		<put-attribute name="title" value="Sample Title" />
+		<put-attribute name="heading" value="/WEB-INF/tiles/template/header.jsp" />
+		<put-attribute name="tagline" value="" />
+ 		<put-attribute name="navigation" value="/WEB-INF/tiles/template/navigation.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
+	</definition>
+
+ 	<definition name="welcome" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+ 		<put-attribute name="body" value="/WEB-INF/views/welcome.jsp" />
+	</definition>
+	
+	<definition name="products" extends="baseLayout">
+		<put-attribute name="title" value="Products" />
+ 		<put-attribute name="body" value="/WEB-INF/views/products.jsp" />
+	</definition>
+	
+	<definition name="error-forbidden" extends="baseLayout">
+		<put-attribute name="title" value="Error" />
+ 		<put-attribute name="body" value="/WEB-INF/views/error-forbidden.jsp" />
+	</definition>
+	
+	<definition name="addUser" extends="baseLayout">
+		<put-attribute name="title" value="Add User" />
+ 		<put-attribute name="body" value="/WEB-INF/views/addUser.jsp" />
+	</definition>
+	
+	<definition name="login" extends="baseLayout">
+		<put-attribute name="title" value="Login" />
+ 		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+	
+	<definition name="editProduct" extends="baseLayout">
+		<put-attribute name="title" value="Edit Product" />
+ 		<put-attribute name="body" value="/WEB-INF/views/editProduct.jsp" />
+	</definition>
+ 	
+		<definition name="addProduct" extends="baseLayout">
+		<put-attribute name="title" value="Add Product" />
+ 		<put-attribute name="body" value="/WEB-INF/views/addProduct.jsp" />
+	</definition>
+	
+		<definition name="addCategory" extends="baseLayout">
+		<put-attribute name="title" value="Edit Product" />
+ 		<put-attribute name="body" value="/WEB-INF/views/addCategory.jsp" />
+	</definition>
+	
+	
+
+	 	
+</tiles-definitions>

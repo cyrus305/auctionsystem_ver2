@@ -1,0 +1,42 @@
+
+.logo {
+	width: 60px;
+	margin-top: 15px;
+}
+
+.username{
+	float: right;
+    position: relative;
+    top: 44px;
+    right: -445px;
+    color: black;
+    font-size: 17px;
+}
+
+form label { 
+    width: 250px;
+    display: block;
+    float: left;
+    text-align: right;
+    padding: 2px;
+}
+
+#buttons{
+	left: 100px;
+    text-align: center;
+    width: 544px;
+}
+
+.para{
+	font-size: 17pt;
+}
+
+.mainTitle{
+	font-size: 41px;
+	font-weight: bold;
+}
+
+.login{
+	width: 200px;
+	text-align: right
+}
