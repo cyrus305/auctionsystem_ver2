@@ -16,6 +16,7 @@ import meditating.mastermind.domain.User;
 import meditating.mastermind.service.UserService;
 
 @SessionAttributes("loggedInUser")
+
 @Controller
 public class LoginController {
 	@Autowired
@@ -61,7 +62,7 @@ public class LoginController {
 			 * ()));
 			 */
 			User user = userService.findByUserNumber(credentials.getId());
-			model.addAttribute("loggedInUser", user.getFirstName());
+			model.addAttribute("loggedInUser", user);
 			return "redirect:/welcome";
 		}
 		model.addAttribute("message", "Username or password didn't matched");

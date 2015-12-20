@@ -17,6 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import meditating.mastermind.domain.Category;
 import meditating.mastermind.domain.Product;
+import meditating.mastermind.service.BidService;
 import meditating.mastermind.service.ProductService;
 
 @Controller
@@ -25,10 +26,14 @@ public class ProductController {
 
 	@Autowired
 	private ProductService productService;
+	
+	@Autowired
+	private BidService bidService;
 
 	@RequestMapping(value = { "/products", "" }, method = RequestMethod.GET)
 	public String list(@ModelAttribute("products") Product product, Model model) {
 		model.addAttribute("products", productService.getAllProducts());
+		model.addAttribute("bids",bidService.getAllBids());
 		return "products";
 	}
 

@@ -5,7 +5,7 @@
 <div>
 
 <p class="para">
-Welcome to Auction System!! Place you bid, grab the item and fullfill you wildest dream !!!!!
+Welcome to Auction System!! Place you bid, grab the item and fulfill you wildest dream !!!!!
 </p>
 <c:if test="${loggedInUser ne null}">
 	<%-- <p> Welcome ${loggedInUser }</p> --%>

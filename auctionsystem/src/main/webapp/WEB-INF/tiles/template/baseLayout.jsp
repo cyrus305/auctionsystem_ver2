@@ -38,8 +38,7 @@
 					<tiles:insertAttribute name="navigation" />
 				</ul>
 				<security:authorize access="isAuthenticated()">
-					<span class="username"> Hello <security:authentication
-							property="principal.username" />!
+					<span class="username"> Hello ${loggedInUser.firstName}!
 					</span>
 				</security:authorize>
 
